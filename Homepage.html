@@ -20,15 +20,47 @@
         /* Full-Screen Background */
         body {
             background: url('https://source.unsplash.com/1600x900/?office,training') no-repeat center center/cover;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: center; /* Center content vertically */
             text-align: center;
             color: white;
             padding: 20px;
-            flex-direction: column;
-            min-height: 100vh;
+        }
+		
+		/* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff8c00;
         }
 
         /* Dark Overlay */
@@ -52,6 +84,7 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             backdrop-filter: blur(5px);
+            margin: 60px auto 0; /* Center horizontally and add margin for navbar */
         }
 
         /* Title */
@@ -94,9 +127,9 @@
             color: white;
             text-align: center;
             padding: 20px 0;
-            position: relative;
             width: 100%;
-            margin-top: 20px;
+            position: fixed; /* Fix footer at the bottom */
+            bottom: 0;
         }
 
         .footer-container {
@@ -184,6 +217,16 @@
 <body>
 
     <div class="overlay"></div>
+	
+	<!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Homepage.html">Training Portal</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         <h1>Welcome to the Training Portal</h1>
@@ -192,6 +235,7 @@
         <a href="index.html" class="button">Back to Home</a>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">

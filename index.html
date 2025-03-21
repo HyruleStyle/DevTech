@@ -20,11 +20,11 @@
         /* Full-Screen Background */
         body {
             background: url('https://source.unsplash.com/1600x900/?technology,developer') no-repeat center center/cover;
-            height: 100vh;
+            min-height: 100vh; /* Ensure body covers at least the full viewport height */
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: center; /* Center content vertically */
             text-align: center;
             color: white;
             padding: 20px;
@@ -84,6 +84,7 @@
             border-radius: 10px;
             backdrop-filter: blur(5px);
             text-align: center;
+            margin: 60px auto 0; /* Center horizontally and add margin for navbar */
         }
 
         h1 {
@@ -124,9 +125,9 @@
             color: white;
             text-align: center;
             padding: 20px 0;
-            position: relative;
             width: 100%;
-            margin-top: 50px;
+            position: fixed; /* Fix footer at the bottom */
+            bottom: 0;
         }
 
         .footer-container {
