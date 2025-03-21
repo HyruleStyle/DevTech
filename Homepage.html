@@ -27,6 +27,8 @@
             text-align: center;
             color: white;
             padding: 20px;
+			flex-direction: column;
+    min-height: 100vh;
         }
 
         /* Dark Overlay */
@@ -42,7 +44,7 @@
 
         /* Centered Content */
         .container {
-            position: relative;
+            position: centre;
             z-index: 2;
             max-width: 600px;
             padding: 30px;
@@ -99,13 +101,13 @@
         }
 		
 		 footer {
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100%;
-        margin-top: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
     }
 
     .footer-container {
