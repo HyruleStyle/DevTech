@@ -59,13 +59,13 @@
 
         nav ul li {
             display: inline;
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
             transition: 0.3s;
         }
@@ -79,7 +79,7 @@
             position: relative;
             z-index: 2;
             max-width: 800px;
-            padding: 40px;
+            padding: 30px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             backdrop-filter: blur(5px);
@@ -87,13 +87,13 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 15px;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 20px;
         }
 
@@ -101,8 +101,8 @@
         .button {
             background: #ff8c00;
             color: white;
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 12px 25px;
+            font-size: 16px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
@@ -118,6 +118,71 @@
             box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
         }
 
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .footer-logo h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            margin: 15px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ff8c00;
+        }
+
+        .footer-social {
+            margin: 15px 0;
+        }
+
+        .footer-social a {
+            margin: 0 8px;
+            display: inline-block;
+            transition: 0.3s ease;
+        }
+
+        .footer-social img {
+            width: 25px;
+            height: 25px;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        .footer-social img:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        footer p {
+            font-size: 12px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
         /* Responsive Design */
         @media (max-width: 600px) {
             h1 {
@@ -126,83 +191,28 @@
             p {
                 font-size: 1rem;
             }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
             .button {
-                font-size: 16px;
-                padding: 12px 25px;
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+            .footer-logo h2 {
+                font-size: 20px;
+            }
+            .footer-links a {
+                font-size: 12px;
+            }
+            .footer-social img {
+                width: 20px;
+                height: 20px;
+            }
+            footer p {
+                font-size: 10px;
             }
         }
-		
-		 footer {
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .footer-container {
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    .footer-logo h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .footer-links {
-        margin: 15px 0;
-    }
-
-    .footer-links a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-        font-size: 16px;
-        transition: 0.3s;
-    }
-
-    .footer-links a:hover {
-        color: #ff8c00;
-    }
-
-    .footer-social {
-        margin: 15px 0;
-    }
-
-    .footer-social a {
-        margin: 0 10px;
-        display: inline-block;
-        transition: 0.3s ease;
-    }
-
-    .footer-social img {
-        width: 30px;
-        height: 30px;
-        opacity: 0.8;
-        transition: 0.3s;
-    }
-
-    .footer-social img:hover {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-
-    p {
-        font-size: 14px;
-        margin-top: 10px;
-        opacity: 0.8;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 600px) {
-        .footer-links a {
-            display: block;
-            margin: 10px 0;
-        }
-    }
     </style>
 </head>
 <body>
@@ -228,28 +238,29 @@
         <a href="ContactUs.html" class="button">Contact Us</a>
     </div>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <h2>DevTech Solutions</h2>
-        </div>
-        
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="About Us.html">About</a>
-            <a href="Homepage.html">Training Portal</a>
-            <a href="ContactUs.html">Contact</a>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>DevTech Solutions</h2>
+            </div>
+            
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="About Us.html">About</a>
+                <a href="Homepage.html">Training Portal</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
 
-        <div class="footer-social">
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Facebook"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Twitter"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png" alt="LinkedIn"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111738.png" alt="Instagram"></a>
-        </div>
+            <div class="footer-social">
+                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111738.png" alt="Instagram"></a>
+            </div>
 
-        <p>&copy; 2025 DevTech Solutions. All rights reserved.</p>
-    </div>
-</footer>
+            <p>&copy; 2025 DevTech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
